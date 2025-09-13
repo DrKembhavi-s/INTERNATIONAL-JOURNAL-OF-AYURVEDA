@@ -184,23 +184,55 @@ section h3 {
     margin-top: 15px;
 }
 
-/* Current Issue Section */
-.current-issue {
-    background: white;
-    text-align: center;
-}
-
-.issue-info {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
+/* Current Issue Articles Styling */
+.current-issue-articles {
+    margin: 25px 0;
+    padding: 20px;
     background: #f8f9fa;
     border-radius: 10px;
+    border-left: 4px solid #2a5298;
 }
 
-.issue-info h3 {
+.current-issue-articles h4 {
     color: #2a5298;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.current-issue-articles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.current-issue-articles ul li {
+    margin: 12px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.current-issue-articles ul li:last-child {
+    border-bottom: none;
+}
+
+.current-issue-articles ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.current-issue-articles ul li a:hover {
+    color: #2a5298;
+    text-decoration: underline;
+}
+
+.issue-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.issue-actions .cta-button {
+    margin: 0 10px;
 }
 
 /* Editorial Section */
