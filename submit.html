@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Article - International Journal of Ayurveda</title>
+    <meta name="description" content="Submit your research article to International Journal of Ayurveda - Peer-reviewed academic publication">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/submit.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">International Journal of Ayurveda</a></h1>
+            <p class="tagline">Article Submission Portal</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#" class="active">Submit Article</a></li>
+                    <li><a href="index.html#current-issue">Current Issue</a></li>
+                    <li><a href="index.html#editorial-board">Editorial Board</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="submission-guidelines">
+                <h2>Submission Guidelines</h2>
+                <div class="guidelines-grid">
+                    <div class="guideline-box">
+                        <h3>Article Types</h3>
+                        <ul>
+                            <li>Original Research</li>
+                            <li>Review Articles</li>
+                            <li>Case Studies</li>
+                            <li>Clinical Reports</li>
+                            <li>Short Communications</li>
+                        </ul>
+                    </div>
+                    <div class="guideline-box">
+                        <h3>Requirements</h3>
+                        <ul>
+                            <li>Original, unpublished work</li>
+                            <li>Abstract (250 words max)</li>
+                            <li>Keywords (5-8 terms)</li>
+                            <li>References in standard format</li>
+                            <li>Author guidelines compliance</li>
+                        </ul>
+                    </div>
+                    <div class="guideline-box">
+                        <h3>Review Process</h3>
+                        <ul>
+                            <li>Initial editorial screening</li>
+                            <li>Double-blind peer review</li>
+                            <li>Author revision (if needed)</li>
+                            <li>Final acceptance decision</li>
+                            <li>Publication preparation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="submission-form-section">
+                <h2>Submit Your Article</h2>
+                <p class="form-intro">Please fill out all required fields. Your submission will be reviewed by our editorial team within 2-3 business days.</p>
+                
+                <form id="articleSubmissionForm" class="submission-form">
+                    <!-- Author Information -->
+                    <fieldset>
+                        <legend>Author Information</legend>
+                        <div class="form-group">
+                            <label for="leadAuthor">Lead Author Name *</label>
+                            <input type="text" id="leadAuthor" name="leadAuthor" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="authorEmail">Email Address *</label>
+                            <input type="email" id="authorEmail" name="authorEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="institution">Institution/Affiliation *</label>
+                            <input type="text" id="institution" name="institution" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="coAuthors">Co-authors (Name, Institution)</label>
+                            <textarea id="coAuthors" name="coAuthors" rows="3" placeholder="List co-authors with their affiliations, one per line"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="correspondingAuthor">Corresponding Author Details</label>
+                            <textarea id="correspondingAuthor" name="correspondingAuthor" rows="2" placeholder="Name, Email, Phone, Address"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- Article Details -->
+                    <fieldset>
+                        <legend>Article Details</legend>
+                        <div class="form-group">
+                            <label for="articleTitle">Article Title *</label>
+                            <input type="text" id="articleTitle" name="articleTitle" required maxlength="200">
+                        </div>
+                        <div class="form-group">
+                            <label for="articleType">Article Type *</label>
+                            <select id="articleType" name="articleType" required>
+                                <option value="">Select Article Type</option>
+                                <option value="original-research">Original Research</option>
+                                <option value="review-article">Review Article</option>
+                                <option value="case-study">Case Study</option>
+                                <option value="clinical-report">Clinical Report</option>
+                                <option value="short-communication">Short Communication</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialization">Ayurveda Specialization *</label>
+                            <select id="specialization" name="specialization" required>
+                                <option value="">Select Specialization</option>
+                                <option value="kayachikitsa">Kayachikitsa (Internal Medicine)</option>
+                                <option value="shalya-tantra">Shalya Tantra (Surgery)</option>
+                                <option value="shalakya-tantra">Shalakya Tantra (ENT & Ophthalmology)</option>
+                                <option value="prasuti-tantra">Prasuti Tantra (Obstetrics & Gynecology)</option>
+                                <option value="kaumarbhritya">Kaumarbhritya (Pediatrics)</option>
+                                <option value="agada-tantra">Agada Tantra (Toxicology)</option>
+                                <option value="rasayana-tantra">Rasayana Tantra (Rejuvenation)</option>
+                                <option value="vajikarana">Vajikarana (Aphrodisiac)</option>
+                                <option value="dravyaguna">Dravyaguna (Pharmacology)</option>
+                                <option value="panchakarma">Panchakarma</option>
+                                <option value="basic-principles">Basic Principles</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="keywords">Keywords *</label>
+                            <input type="text" id="keywords" name="keywords" required placeholder="Enter 5-8 keywords separated by commas">
+                            <small>Example: Ayurveda, herbal medicine, clinical study, traditional medicine</small>
+                        </div>
+                    </fieldset>
+
+                    <!-- Abstract and Content -->
+                    <fieldset>
+                        <legend>Abstract and Content</legend>
+                        <div class="form-group">
+                            <label for="abstract">Abstract * (250 words maximum)</label>
+                            <textarea id="abstract" name="abstract" rows="8" required maxlength="2000" placeholder="Provide a concise summary of your research including background, methods, results, and conclusions"></textarea>
+                            <div class="word-count">Words: <span id="abstractWordCount">0</span>/250</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="introduction">Introduction/Background *</label>
+                            <textarea id="introduction" name="introduction" rows="10" required placeholder="Provide background information, literature review, and research objectives"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="methodology">Methodology/Materials and Methods</label>
+                            <textarea id="methodology" name="methodology" rows="8" placeholder="Describe your research methodology, materials used, study design, etc."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="results">Results and Discussion *</label>
+                            <textarea id="results" name="results" rows="10" required placeholder="Present your findings and discuss their significance"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="conclusion">Conclusion *</label>
+                            <textarea id="conclusion" name="conclusion" rows="5" required placeholder="Summarize key findings and their implications"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="references">References *</label>
+                            <textarea id="references" name="references" rows="8" required placeholder="List all references in standard format, one per line"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- Additional Information -->
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <div class="form-group">
+                            <label for="conflictInterest">Conflict of Interest Statement</label>
+                            <textarea id="conflictInterest" name="conflictInterest" rows="3" placeholder="Declare any conflicts of interest or state 'No conflicts of interest to declare'"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="funding">Funding Information</label>
+                            <textarea id="funding" name="funding" rows="3" placeholder="Provide details about research funding, grants, or sponsorships"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="acknowledgments">Acknowledgments</label>
+                            <textarea id="acknowledgments" name="acknowledgments" rows="3" placeholder="Acknowledge individuals, institutions, or organizations that contributed to the research"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- Submission Agreement -->
+                    <fieldset>
+                        <legend>Submission Agreement</legend>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" id="originalWork" name="originalWork" required>
+                                I confirm that this is original work and has not been published elsewhere *
+                            </label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" id="ethicalApproval" name="ethicalApproval" required>
+                                I confirm that this research follows ethical guidelines and has appropriate approvals *
+                            </label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" id="copyrightAgreement" name="copyrightAgreement" required>
+                                I agree to transfer copyright to the International Journal of Ayurveda upon acceptance *
+                            </label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" id="peerReviewAgreement" name="peerReviewAgreement" required>
+                                I understand and agree to the peer review process *
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Submit Article</button>
+                        <button type="reset" class="reset-btn">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 International Journal of Ayurveda. All rights reserved.</p>
+            <p>For questions about submissions, contact: editor@internationaljournalofayurveda.org</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/submit.js"></script>
+</body>
+</html>
