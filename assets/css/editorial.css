@@ -1,0 +1,663 @@
+/* Editorial Dashboard Styling - International Journal of Ayurveda */
+
+/* Login Section */
+.login-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #2a5298;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.login-box p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-box .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-box label {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #2a5298;
+    box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #1e3c72;
+}
+
+.demo-note {
+    background: #e8f4f8;
+    border: 1px solid #2a5298;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+    padding: 20px 0;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-header h2 {
+    color: #2a5298;
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logout-btn {
+    padding: 8px 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+/* Statistics Overview */
+.stats-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    border-left: 4px solid #2a5298;
+}
+
+.stat-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2a5298;
+    margin-bottom: 5px;
+}
+
+.stat-change {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+    display: flex;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 20px;
+    background: none;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+    color: #2a5298;
+    background: white;
+    border-bottom-color: #2a5298;
+}
+
+.tab-btn:hover {
+    background: #e9ecef;
+    color: #2a5298;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 30px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-header h3 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 15px;
+}
+
+.filters select {
+    padding: 8px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Submissions List */
+.submissions-list {
+    space-y: 20px;
+}
+
+.submission-item {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.submission-item:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.submission-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.submission-header h4 {
+    color: #2c3e50;
+    margin: 0;
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.submission-status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.submission-status.pending {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.submission-status.under-review {
+    background: #cce5ff;
+    color: #0056b3;
+    border: 1px solid #74b9ff;
+}
+
+.submission-status.accepted {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #00b894;
+}
+
+.submission-status.rejected {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #e17055;
+}
+
+.submission-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.submission-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary, .btn-warning, .btn-success, .btn-danger, .btn-info {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: #2a5298;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1e3c72;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.btn-warning {
+    background: #ffc107;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: #e0a800;
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #218838;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+.btn-info {
+    background: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover {
+    background: #138496;
+}
+
+/* Reviewers Section */
+.reviewers-section, .active-reviews-section {
+    margin-bottom: 40px;
+}
+
+.reviewers-section h4, .active-reviews-section h4 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.reviewers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.reviewer-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.reviewer-card h5 {
+    color: #2a5298;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.reviewer-card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.reviewer-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.reviewer-status.available {
+    background: #d4edda;
+    color: #155724;
+}
+
+.reviewer-status.busy {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* Review Items */
+.review-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.review-item h5 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.review-progress {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #28a745;
+    transition: width 0.3s;
+}
+
+/* Publication Management */
+.publication-queue, .journal-metrics {
+    margin-bottom: 40px;
+}
+
+.publication-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.publication-item h5 {
+    color: #2a5298;
+    margin-bottom: 10px;
+}
+
+.publication-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.metric-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-center;
+    border: 1px solid #ddd;
+}
+
+.metric-item h5 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.metric-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2a5298;
+    margin-bottom: 5px;
+}
+
+.metric-item small {
+    color: #666;
+    font-style: italic;
+}
+
+/* Settings Section */
+.settings-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.settings-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.settings-section h4 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.settings-form .form-group {
+    margin-bottom: 20px;
+}
+
+.settings-form label {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.settings-form input,
+.settings-form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.settings-form input:focus,
+.settings-form select:focus {
+    outline: none;
+    border-color: #2a5298;
+}
+
+/* No Data Message */
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .tab-navigation {
+        flex-direction: column;
+    }
+    
+    .tab-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .filters {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .submission-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .submission-status {
+        margin-left: 0;
+    }
+    
+    .submission-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .submission-actions {
+        justify-content: center;
+    }
+    
+    .stats-overview {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviewers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .settings-sections {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .login-section,
+    .dashboard-header .user-info,
+    .submission-actions,
+    .publication-actions {
+        display: none;
+    }
+    
+    .dashboard-content {
+        box-shadow: none;
+    }
+}
