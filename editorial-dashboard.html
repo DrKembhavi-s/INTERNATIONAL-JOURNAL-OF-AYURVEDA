@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Dashboard - International Journal of Ayurveda</title>
+    <meta name="description" content="Editorial management system for International Journal of Ayurveda">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/editorial.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">International Journal of Ayurveda</a></h1>
+            <p class="tagline">Editorial Management System</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="submit.html">Submit Article</a></li>
+                    <li><a href="#" class="active">Editorial Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Login Section -->
+            <section id="loginSection" class="login-section">
+                <div class="login-box">
+                    <h2>Editorial Access</h2>
+                    <p>Please enter your credentials to access the editorial dashboard</p>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="login-btn">Login</button>
+                    </form>
+                    <p class="demo-note">
+                        <strong>Demo Access:</strong><br>
+                        Username: editor<br>
+                        Password: ayurveda2025
+                    </p>
+                </div>
+            </section>
+
+            <!-- Dashboard Section -->
+            <section id="dashboardSection" class="dashboard-section" style="display: none;">
+                <!-- Dashboard Header -->
+                <div class="dashboard-header">
+                    <h2>Editorial Dashboard</h2>
+                    <div class="user-info">
+                        <span>Welcome, <span id="currentUser">Editor</span></span>
+                        <button id="logoutBtn" class="logout-btn">Logout</button>
+                    </div>
+                </div>
+
+                <!-- Statistics Overview -->
+                <div class="stats-overview">
+                    <div class="stat-card">
+                        <h3>Total Submissions</h3>
+                        <div class="stat-number" id="totalSubmissions">0</div>
+                        <div class="stat-change">+0 this month</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Under Review</h3>
+                        <div class="stat-number" id="underReview">0</div>
+                        <div class="stat-change">Active reviews</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Accepted</h3>
+                        <div class="stat-number" id="accepted">0</div>
+                        <div class="stat-change">Ready for publication</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Published</h3>
+                        <div class="stat-number" id="published">0</div>
+                        <div class="stat-change">Volume 1, Issue 1</div>
+                    </div>
+                </div>
+
+                <!-- Main Dashboard Content -->
+                <div class="dashboard-content">
+                    <!-- Tabs -->
+                    <div class="tab-navigation">
+                        <button class="tab-btn active" data-tab="submissions">Submissions</button>
+                        <button class="tab-btn" data-tab="reviews">Peer Reviews</button>
+                        <button class="tab-btn" data-tab="publication">Publication</button>
+                        <button class="tab-btn" data-tab="settings">Settings</button>
+                    </div>
+
+                    <!-- Submissions Tab -->
+                    <div id="submissions-tab" class="tab-content active">
+                        <div class="tab-header">
+                            <h3>Manuscript Submissions</h3>
+                            <div class="filters">
+                                <select id="statusFilter">
+                                    <option value="all">All Status</option>
+                                    <option value="pending">Pending Review</option>
+                                    <option value="under-review">Under Review</option>
+                                    <option value="revision">Revision Required</option>
+                                    <option value="accepted">Accepted</option>
+                                    <option value="rejected">Rejected</option>
+                                </select>
+                                <select id="specializationFilter">
+                                    <option value="all">All Specializations</option>
+                                    <option value="kayachikitsa">Kayachikitsa</option>
+                                    <option value="shalya-tantra">Shalya Tantra</option>
+                                    <option value="panchakarma">Panchakarma</option>
+                                    <option value="dravyaguna">Dravyaguna</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="submissions-list">
+                            <div class="submission-item sample-submission">
+                                <div class="submission-header">
+                                    <h4>Clinical Efficacy of Triphala in Digestive Disorders: A Randomized Control Trial</h4>
+                                    <div class="submission-status pending">Pending Review</div>
+                                </div>
+                                <div class="submission-meta">
+                                    <span><strong>ID:</strong> IJA-1704067200</span>
+                                    <span><strong>Author:</strong> Dr. Ramesh Kumar</span>
+                                    <span><strong>Institution:</strong> AIIMS Delhi</span>
+                                    <span><strong>Submitted:</strong> Jan 1, 2025</span>
+                                    <span><strong>Type:</strong> Original Research</span>
+                                </div>
+                                <div class="submission-actions">
+                                    <button class="btn-primary" onclick="viewSubmission('IJA-1704067200')">View Details</button>
+                                    <button class="btn-secondary" onclick="assignReviewer('IJA-1704067200')">Assign Reviewer</button>
+                                    <button class="btn-warning" onclick="requestRevision('IJA-1704067200')">Request Revision</button>
+                                    <button class="btn-success" onclick="acceptSubmission('IJA-1704067200')">Accept</button>
+                                    <button class="btn-danger" onclick="rejectSubmission('IJA-1704067200')">Reject</button>
+                                </div>
+                            </div>
+
+                            <div class="submission-item sample-submission">
+                                <div class="submission-header">
+                                    <h4>Ayurvedic Management of Diabetes Mellitus: A Systematic Review</h4>
+                                    <div class="submission-status under-review">Under Review</div>
+                                </div>
+                                <div class="submission-meta">
+                                    <span><strong>ID:</strong> IJA-1704067300</span>
+                                    <span><strong>Author:</strong> Dr. Priya Sharma</span>
+                                    <span><strong>Institution:</strong> BAMS College, Mumbai</span>
+                                    <span><strong>Submitted:</strong> Dec 28, 2024</span>
+                                    <span><strong>Type:</strong> Review Article</span>
+                                </div>
+                                <div class="submission-actions">
+                                    <button class="btn-primary" onclick="viewSubmission('IJA-1704067300')">View Details</button>
+                                    <button class="btn-info" onclick="viewReviewComments('IJA-1704067300')">Review Comments</button>
+                                    <button class="btn-warning" onclick="requestRevision('IJA-1704067300')">Request Revision</button>
+                                    <button class="btn-success" onclick="acceptSubmission('IJA-1704067300')">Accept</button>
+                                </div>
+                            </div>
+
+                            <div id="noSubmissions" class="no-data" style="display: none;">
+                                <p>No submissions found matching your criteria.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Tab -->
+                    <div id="reviews-tab" class="tab-content">
+                        <div class="tab-header">
+                            <h3>Peer Review Management</h3>
+                            <button class="btn-primary" onclick="addReviewer()">Add New Reviewer</button>
+                        </div>
+
+                        <div class="reviewers-section">
+                            <h4>Available Reviewers</h4>
+                            <div class="reviewers-grid">
+                                <div class="reviewer-card">
+                                    <h5>Dr. Anil Gupta</h5>
+                                    <p>Specialization: Kayachikitsa</p>
+                                    <p>Institution: AIIMS, Delhi</p>
+                                    <p>Reviews Completed: 12</p>
+                                    <p>Average Review Time: 14 days</p>
+                                    <div class="reviewer-status available">Available</div>
+                                </div>
+                                
+                                <div class="reviewer-card">
+                                    <h5>Dr. Meera Patel</h5>
+                                    <p>Specialization: Panchakarma</p>
+                                    <p>Institution: Gujarat Ayurveda University</p>
+                                    <p>Reviews Completed: 8</p>
+                                    <p>Average Review Time: 10 days</p>
+                                    <div class="reviewer-status busy">Busy (2 reviews)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="active-reviews-section">
+                            <h4>Active Reviews</h4>
+                            <div class="reviews-list">
+                                <div class="review-item">
+                                    <h5>IJA-1704067300: Ayurvedic Management of Diabetes</h5>
+                                    <p><strong>Reviewer:</strong> Dr. Anil Gupta</p>
+                                    <p><strong>Assigned:</strong> Dec 30, 2024</p>
+                                    <p><strong>Due:</strong> Jan 13, 2025</p>
+                                    <div class="review-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 60%;"></div>
+                                        </div>
+                                        <span>60% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Publication Tab -->
+                    <div id="publication-tab" class="tab-content">
+                        <div class="tab-header">
+                            <h3>Publication Management</h3>
+                            <button class="btn-primary" onclick="createNewIssue()">Create New Issue</button>
+                        </div>
+
+                        <div class="publication-queue">
+                            <h4>Ready for Publication</h4>
+                            <div class="publication-list">
+                                <div class="publication-item">
+                                    <h5>Volume 1, Issue 1 (March 2025)</h5>
+                                    <p>Status: In Preparation</p>
+                                    <p>Articles: 0 accepted, 2 under review</p>
+                                    <p>Target Publication: March 15, 2025</p>
+                                    <div class="publication-actions">
+                                        <button class="btn-secondary">Edit Issue</button>
+                                        <button class="btn-success">Preview Issue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journal-metrics">
+                            <h4>Journal Metrics</h4>
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <h5>Acceptance Rate</h5>
+                                    <div class="metric-value">0%</div>
+                                    <small>Based on 0 submissions</small>
+                                </div>
+                                <div class="metric-item">
+                                    <h5>Average Review Time</h5>
+                                    <div class="metric-value">0 days</div>
+                                    <small>Target: 30 days</small>
+                                </div>
+                                <div class="metric-item">
+                                    <h5>Time to Publication</h5>
+                                    <div class="metric-value">0 days</div>
+                                    <small>From acceptance</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings Tab -->
+                    <div id="settings-tab" class="tab-content">
+                        <div class="tab-header">
+                            <h3>Journal Settings</h3>
+                        </div>
+
+                        <div class="settings-sections">
+                            <div class="settings-section">
+                                <h4>Journal Information</h4>
+                                <form class="settings-form">
+                                    <div class="form-group">
+                                        <label>Journal Title</label>
+                                        <input type="text" value="International Journal of Ayurveda" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>ISSN (Print)</label>
+                                        <input type="text" placeholder="Applied for" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>ISSN (Online)</label>
+                                        <input type="text" placeholder="Applied for" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Publication Frequency</label>
+                                        <select>
+                                            <option selected>Quarterly</option>
+                                            <option>Bi-annually</option>
+                                            <option>Monthly</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="settings-section">
+                                <h4>Review Settings</h4>
+                                <form class="settings-form">
+                                    <div class="form-group">
+                                        <label>Review Type</label>
+                                        <select>
+                                            <option selected>Double Blind</option>
+                                            <option>Single Blind</option>
+                                            <option>Open Review</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Review Deadline (Days)</label>
+                                        <input type="number" value="30">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Minimum Reviewers per Article</label>
+                                        <input type="number" value="2" min="1" max="5">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 International Journal of Ayurveda. Editorial Management System.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/editorial.js"></script>
+</body>
+</html>
