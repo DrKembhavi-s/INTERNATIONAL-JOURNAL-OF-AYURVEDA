@@ -1,0 +1,620 @@
+/* Guidelines and Policy Pages Styling - International Journal of Ayurveda */
+
+/* Guidelines Content */
+.guidelines-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.8;
+}
+
+.guidelines-content h1 {
+    color: #2a5298;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    border-bottom: 3px solid #2a5298;
+    padding-bottom: 20px;
+}
+
+.guidelines-content h2 {
+    color: #2c3e50;
+    margin: 40px 0 20px 0;
+    font-size: 1.8em;
+    border-left: 5px solid #2a5298;
+    padding-left: 20px;
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.guidelines-content h3 {
+    color: #34495e;
+    margin: 30px 0 15px 0;
+    font-size: 1.4em;
+}
+
+.guidelines-content h4 {
+    color: #2a5298;
+    margin: 20px 0 10px 0;
+    font-size: 1.2em;
+}
+
+/* Table of Contents */
+.toc {
+    background: #e8f4f8;
+    border: 2px solid #2a5298;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px 0;
+}
+
+.toc h3 {
+    color: #2a5298;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.toc ul li:before {
+    content: "→";
+    color: #2a5298;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.toc ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.toc ul li a:hover {
+    color: #2a5298;
+    text-decoration: underline;
+}
+
+/* Submission Types */
+.submission-type {
+    background: white;
+    border: 1px solid #ddd;
+    border-left: 4px solid #2a5298;
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.submission-type h3 {
+    color: #2a5298;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.submission-type p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.submission-type p strong {
+    color: #2c3e50;
+}
+
+/* Process Steps */
+.process-step {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 5px solid #27ae60;
+}
+
+.process-step h3 {
+    color: #27ae60;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.process-step ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.process-step ul li {
+    margin: 8px 0;
+    color: #2c3e50;
+}
+
+/* Reference Examples */
+.reference-example {
+    background: #f4f4f4;
+    border-left: 4px solid #2a5298;
+    padding: 15px 20px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    color: #2c3e50;
+}
+
+/* Contact and Action Sections */
+.contact-section,
+.action-section {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.contact-section h2,
+.action-section h2 {
+    color: white;
+    margin-top: 0;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.submit-now-btn {
+    display: inline-block;
+    background: white;
+    color: #2a5298;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.submit-now-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+}
+
+/* Policy Intro */
+.policy-intro {
+    background: #e8f4f8;
+    border: 2px solid #2a5298;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.policy-intro p {
+    margin: 0;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Process Timeline */
+.process-timeline {
+    margin: 30px 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    position: relative;
+}
+
+.timeline-item:not(:last-child):before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    width: 2px;
+    height: 60px;
+    background: #2a5298;
+}
+
+.timeline-marker {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2a5298;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.timeline-content {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #2a5298;
+}
+
+.timeline-content h3 {
+    margin: 0 0 10px 0;
+    color: #2a5298;
+    font-size: 1.3em;
+}
+
+.timeline-content p {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.timeline-duration {
+    background: #2a5298;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Review Type Cards */
+.review-type-card {
+    background: white;
+    border: 2px solid #2a5298;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(42, 82, 152, 0.1);
+}
+
+.review-type-card h3 {
+    color: #2a5298;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.review-features {
+    display: grid;
+    gap: 10px;
+}
+
+.feature {
+    color: #27ae60;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+/* Criteria Grid */
+.criteria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.criteria-item {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    border-top: 4px solid #2a5298;
+}
+
+.criteria-item h4 {
+    color: #2a5298;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.criteria-item ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.criteria-item ul li {
+    margin: 8px 0;
+    color: #2c3e50;
+}
+
+/* Standards Section */
+.standards-section {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 5px solid #e74c3c;
+}
+
+.standards-section h3 {
+    color: #e74c3c;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.standards-section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.standards-section ul li {
+    margin: 12px 0;
+    color: #2c3e50;
+}
+
+.standards-section ul li strong {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* Outcome Grid */
+.outcome-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.outcome-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid;
+}
+
+.outcome-card.accept {
+    border-top-color: #27ae60;
+}
+
+.outcome-card.minor {
+    border-top-color: #f39c12;
+}
+
+.outcome-card.major {
+    border-top-color: #e67e22;
+}
+
+.outcome-card.reject {
+    border-top-color: #e74c3c;
+}
+
+.outcome-card h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    color: #2c3e50;
+}
+
+.outcome-card p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.outcome-rate {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2a5298;
+}
+
+/* Reviewer Guidelines */
+.reviewer-responsibilities {
+    margin: 30px 0;
+}
+
+.responsibility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.responsibility-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #27ae60;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.responsibility-item h4 {
+    color: #27ae60;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.responsibility-item p {
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Review Format */
+.review-format {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px 0;
+    border-left: 5px solid #3498db;
+}
+
+.review-format h3 {
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.review-format ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.review-format ol li {
+    margin: 12px 0;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.review-format ol li strong {
+    color: #3498db;
+}
+
+/* Policy Sections */
+.policy-section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 5px solid #9b59b6;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.policy-section h3 {
+    color: #9b59b6;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.policy-section p {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.policy-section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.policy-section ul li {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+/* Quality Assurance */
+.qa-measures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.qa-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    border-top: 4px solid #f39c12;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.qa-item h4 {
+    color: #f39c12;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.qa-item p {
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .guidelines-content {
+        padding: 20px 10px;
+    }
+    
+    .guidelines-content h1 {
+        font-size: 2em;
+    }
+    
+    .guidelines-content h2 {
+        font-size: 1.5em;
+        padding: 10px 15px;
+    }
+    
+    .criteria-grid,
+    .outcome-grid,
+    .responsibility-grid,
+    .qa-measures {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .timeline-marker {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .timeline-item:not(:last-child):before {
+        display: none;
+    }
+    
+    .toc,
+    .policy-intro,
+    .contact-section,
+    .action-section {
+        padding: 20px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .contact-section,
+    .action-section,
+    nav {
+        display: none;
+    }
+    
+    .guidelines-content {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .guidelines-content h1,
+    .guidelines-content h2 {
+        color: black !important;
+        background: white !important;
+        border-color: black !important;
+    }
+    
+    .timeline-marker,
+    .outcome-card,
+    .criteria-item,
+    .qa-item {
+        box-shadow: none !important;
+        border: 1px solid black !important;
+    }
+}
