@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - International Journal of Ayurveda</title>
+    <meta name="description" content="Download comprehensive guidelines, policies, and documents for the International Journal of Ayurveda. Author guidelines, editorial policies, ethics documentation, and disclosure templates.">
+    <meta name="keywords" content="Ayurveda, Journal Guidelines, Author Guidelines, Editorial Policies, Ethics, Download, Academic Publishing, Conflict of Interest">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+        }
+
+        .downloads-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .downloads-header {
+            background: linear-gradient(135deg, #2c5282, #3182ce);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .downloads-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .downloads-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .downloads-content {
+            padding: 50px 40px;
+            background: white;
+            margin: 0;
+        }
+
+        .downloads-intro {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #f1f5f9;
+            border-radius: 10px;
+            border-left: 5px solid #3182ce;
+        }
+
+        .downloads-intro h2 {
+            color: #2c5282;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .downloads-intro p {
+            color: #4a5568;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .document-category {
+            margin-bottom: 50px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, #2c5282, #3182ce);
+            color: white;
+            padding: 25px 30px;
+            margin: 0;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .category-header p {
+            margin: 8px 0 0 0;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .documents-grid {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .document-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .document-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(44, 82, 130, 0.15);
+            border-color: #3182ce;
+        }
+
+        .document-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c5282;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .document-description {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .document-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: #718096;
+        }
+
+        .document-size {
+            background: #e2e8f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .document-version {
+            font-style: italic;
+        }
+
+        .download-button {
+            background: linear-gradient(135deg, #2c5282, #3182ce);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .download-button:hover {
+            background: linear-gradient(135deg, #2a4a6b, #2c5282);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(44, 82, 130, 0.3);
+        }
+
+        .download-icon {
+            font-size: 1.1rem;
+        }
+
+        .quick-access {
+            background: #edf2f7;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .quick-access h3 {
+            color: #2c5282;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .quick-link {
+            background: white;
+            color: #2c5282;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .quick-link:hover {
+            background: #2c5282;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(44, 82, 130, 0.2);
+        }
+
+        .footer-info {
+            background: #2d3748;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .footer-info h4 {
+            margin-bottom: 15px;
+            color: #e2e8f0;
+        }
+
+        .footer-info p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            background: #4a5568;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .downloads-header {
+                padding: 40px 20px;
+            }
+
+            .downloads-header h1 {
+                font-size: 2rem;
+            }
+
+            .downloads-content {
+                padding: 30px 20px;
+            }
+
+            .documents-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .quick-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="downloads-container">
+        <div class="downloads-header">
+            <h1>Document Downloads</h1>
+            <p>Comprehensive guidelines, policies, and templates for authors, reviewers, and editorial board members</p>
+        </div>
+
+        <div class="downloads-content">
+            <div class="downloads-intro">
+                <h2>Professional Documentation Suite</h2>
+                <p>Access all essential documents for manuscript submission, editorial processes, and ethical compliance. Our comprehensive documentation ensures transparency and maintains the highest standards of academic publishing.</p>
+            </div>
+
+            <!-- Author Resources -->
+            <div class="document-category">
+                <div class="category-header">
+                    <h3>📝 Author Resources</h3>
+                    <p>Essential guides and templates for manuscript submission and compliance</p>
+                </div>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <div class="document-title">Author Guidelines for Submission</div>
+                        <div class="document-description">
+                            Comprehensive 22-page guide covering manuscript types, formatting requirements, submission procedures, review process, and publication standards. Essential reading for all prospective authors.
+                        </div>
+                        <div class="document-meta">
+                            <span class="document-version">Version 1.0 • September 2025</span>
+                            <span class="document-size">PDF • 22 pages</span>
+                        </div>
+                        <a href="documents/Author-Guidelines-for-Submission.pdf" class="download-button" download>
+                            <span class="download-icon">⬇</span>
+                            Download Guidelines
+                        </a>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="document-title">Financial Source & Conflict of Interest Templates</div>
+                        <div class="document-description">
+                            Mandatory disclosure forms for all authors including financial source documentation and comprehensive conflict of interest declarations. Required with every manuscript submission.
+                        </div>
+                        <div class="document-meta">
+                            <span class="document-version">Version 1.0 • September 2025</span>
+                            <span class="document-size">PDF • 17 pages</span>
+                        </div>
+                        <a href="documents/Financial-Source-Conflict-Interest-Templates.pdf" class="download-button" download>
+                            <span class="download-icon">⬇</span>
+                            Download Templates
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editorial Policies -->
+            <div class="document-category">
+                <div class="category-header">
+                    <h3>⚖️ Editorial Policies</h3>
+                    <p>Comprehensive policies governing editorial decisions and ethical standards</p>
+                </div>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <div class="document-title">Ethics and Conflict of Interest Policy</div>
+                        <div class="document-description">
+                            Detailed policy framework covering ethical principles, conflict identification, disclosure requirements, and management procedures for all journal stakeholders.
+                        </div>
+                        <div class="document-meta">
+                            <span class="document-version">Version 1.0 • September 2025</span>
+                            <span class="document-size">PDF • 13 pages</span>
+                        </div>
+                        <a href="documents/Ethics-Conflict-of-Interest-Policy.pdf" class="download-button" download>
+                            <span class="download-icon">⬇</span>
+                            Download Policy
+                        </a>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="document-title">Editorial Decision Appeal Process</div>
+                        <div class="document-description">
+                            Comprehensive appeal procedures for challenging editorial decisions, including grounds for appeal, submission requirements, review process, and possible outcomes.
+                        </div>
+                        <div class="document-meta">
+                            <span class="document-version">Version 1.0 • September 2025</span>
+                            <span class="document-size">PDF • 14 pages</span>
+                        </div>
+                        <a href="documents/Editorial-Decision-Appeal-Process.pdf" class="download-button" download>
+                            <span class="download-icon">⬇</span>
+                            Download Process
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editorial Board Resources -->
+            <div class="document-category">
+                <div class="category-header">
+                    <h3>👥 Editorial Board & Review Resources</h3>
+                    <p>Guidelines and procedures for editorial board members, reviewers, and peer review process</p>
+                </div>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <div class="document-title">Editorial Board Guidelines</div>
+                        <div class="document-description">
+                            Comprehensive guide for editorial board members covering structure, appointment criteria, roles and responsibilities, performance expectations, and support resources.
+                        </div>
+                        <div class="document-meta">
+                            <span class="document-version">Version 1.0 • September 2025</span>
+                            <span class="document-size">PDF • 10 pages</span>
+                        </div>
+                        <a href="documents/Editorial-Board-Guidelines.pdf" class="download-button" download>
+                            <span class="download-icon">⬇</span>
+                            Download Guidelines
+                        </a>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="document-title">Peer Reviewer Guidelines</div>
+                        <div class="document-description">
+                            Detailed instructions for peer reviewers covering review criteria, evaluation standards, timeline expectations, ethical considerations, and quality assessment procedures.
+                        </div>
+                        <div class="document-meta">
+                            <span class="document-version">Version 1.0 • September 2025</span>
+                            <span class="document-size">PDF • TBD pages</span>
+                        </div>
+                        <a href="documents/Peer-Reviewer-Guidelines.pdf" class="download-button" download>
+                            <span class="download-icon">⬇</span>
+                            Download Guidelines
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publication Standards -->
+            <div class="document-category">
+                <div class="category-header">
+                    <h3>📋 Publication Standards & User Resources</h3>
+                    <p>Publication ethics policies and user guidelines for journal platforms</p>
+                </div>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <div class="document-title">Publication Ethics Policy</div>
+                        <div class="document-description">
+                            Comprehensive policy covering publication standards, research integrity, misconduct prevention, authorship requirements, and post-publication procedures.
+                        </div>
+                        <div class="document-meta">
+                            <span class="document-version">Version 1.0 • September 2025</span>
+                            <span class="document-size">PDF • TBD pages</span>
+                        </div>
+                        <a href="documents/Publication-Ethics-Policy.pdf" class="download-button" download>
+                            <span class="download-icon">⬇</span>
+                            Download Policy
+                        </a>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="document-title">User Guidelines</div>
+                        <div class="document-description">
+                            Instructions for accessing and navigating journal platforms, submission systems, account management, and technical support resources.
+                        </div>
+                        <div class="document-meta">
+                            <span class="document-version">Version 1.0 • September 2025</span>
+                            <span class="document-size">PDF • TBD pages</span>
+                        </div>
+                        <a href="documents/User-Guidelines.pdf" class="download-button" download>
+                            <span class="download-icon">⬇</span>
+                            Download Guidelines
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Access Section -->
+            <div class="quick-access">
+                <h3>Quick Access</h3>
+                <div class="quick-links">
+                    <a href="submit.html" class="quick-link">Submit Article</a>
+                    <a href="peer-review.html" class="quick-link">Peer Review Process</a>
+                    <a href="editorial-board.html" class="quick-link">Editorial Board</a>
+                    <a href="index.html#contact" class="quick-link">Contact Editorial Office</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <h4>Document Information</h4>
+            <p><strong>Publisher:</strong> Dr. Kembhavi's Astanga Wellness Private Limited</p>
+            <p><strong>Last Updated:</strong> September 2025</p>
+            <p><strong>License:</strong> Documents may be freely shared for educational and research purposes</p>
+            
+            <div class="contact-info">
+                <h4>Editorial Office Contact</h4>
+                <p><strong>Email:</strong> editor@internationaljournalofayurveda.org</p>
+                <p><strong>Response Time:</strong> Within 24-48 hours for document-related inquiries</p>
+                <p><strong>Technical Support:</strong> Available for form completion assistance</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add download tracking (optional)
+        document.querySelectorAll('.download-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const documentName = this.closest('.document-card').querySelector('.document-title').textContent;
+                console.log(`Downloaded: ${documentName}`);
+                // You can add analytics tracking here if needed
+            });
+        });
+
+        // Smooth scrolling for quick links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
